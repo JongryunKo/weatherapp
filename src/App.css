@@ -5,17 +5,41 @@ body{
   background-size: cover;
 }
 
-.container{
+/* .container{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   flex-direction: column;
-}
+}  */
 
 .weather-box{
   border: 3px solid white;
   padding: 50px;
   border-radius: 30px;
   background-color: antiquewhite;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+} 
+
+.container > *{
+  width: 50%
+}
+
+.weather-button {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.equal-width{
+  flex-grow: 1;
+  text-align: center;
 }
